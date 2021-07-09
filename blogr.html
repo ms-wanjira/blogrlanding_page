@@ -25,20 +25,38 @@
       <div class="nav-links">
         <img src="/images/logo.svg" alt="blogr logo">
         <ul>
-          <li>
-            <a href="#">Products
+          <li class="dropdown">
+            <a class="dropbtn" onclick="myFunction()" href="#">Products
               <img src="/images/icon-arrow-light.svg" alt="arrow light" />
             </a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
           </li>
-          <li>
-            <a href="#">Company
+          <li class="dropdown">
+            <a class="dropbtn" onclick="myFunctionCompany()" href="#">Company
               <img src="/images/icon-arrow-light.svg" alt="arrow light" />
             </a>
+            <div id="myDropdownCompany" class="dropdown-content">
+              <a href="#design-future-section">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
           </li>
-          <li>
-            <a href="#">Connect
+          <li class="dropdown">
+            <a class="dropbtn" onclick="myFunctionContact()" href="#">Connect
               <img src="/images/icon-arrow-light.svg" alt="arrow light" />
             </a>
+            <div id="myDropdownContact" class="dropdown-content">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -58,7 +76,7 @@
     </div>
   </header>
 
-  <section class="design-section">
+  <section id="design-future-section" class="design-section">
     <h2 class="text">Designed for the future</h2>
     <div class="design-row">
       <div class="design-text">
@@ -114,59 +132,70 @@
   </section>
 
   <section class="f-section">
-    <div class="container f-flex">
+    <div class="f-flex">
       <div class="f-image">
         <img src="/images/illustration-laptop-desktop.svg" alt="desktop-image">
       </div>
-      <div></div>
       <div class="f-text">
         <h3>Free, open, simple</h3>
         <p>
-          Blog is a free and open source application backed by a large<br />
-          community of helpful developers. It supports features such as code<br />
-          syntax highlighting, RSS feeds, social media integration, third-party<br />
-          commenting tools, and works seamlessly with Google Analytics.<br />
-          The architecture is clean and is relatively easy to learn.<br />
+          Blog is a free and open source application backed by a large
+          community of <br> helpful developers. It supports features such as code
+          syntax highlighting, RSS <br> feeds, social media integration, third-party
+          commenting tools, and works seamlessly <br> with Google Analytics.
+          The architecture is clean and is relatively easy to learn.
         </p>
 
         <h3>Powerful tooling</h3>
         <p>
           Batteries included. We built a simple and straightforward CLI tool
-          that makes customization and deployment a breeze, but capable of<br />
-          producing even the most complicated sites.
+          that makes <br>customization and deployment a breeze, but capable of
+          producing even the <br> most complicated sites.
         </p>
-    </div>
       </div>
+    </div>
 
     </div>
 
   </section>
+
+
   <div class="footer">
-    <img src="./images/logo.svg" alt="brand-logo">
-    <div class="footer-block">
+    <div class="sub-container footer-section">
+      <img src="./images/logo.svg" alt="brand-logo">
       <h4>Product</h4>
-      <a href="#">Overview</a>
-      <a href="#">Pricing</a>
-      <a href="#">Marketplace</a>
-      <a href="#">Features</a>
-      <a href="#">Integrations</a>
-  </div>
-
-  <div class="footer-block">
       <h4>Company</h4>
-      <a href="#">About</a>
-      <a href="#">Team</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
-  </div>
-
-  <div class="footer-block">
       <h4>Connect</h4>
-      <a href="#">Contact</a>
-      <a href="#">Newsletter</a>
-      <a href="#">LinkedIn</a>
+
+    </div>
+    <div class="sub-container sub-footer">
+      <div></div>
+      <div class="footer-block margin-left">
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+
+      <div class="footer-block">
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-block">
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+
+      </div>
+    </div>
   </div>
-</div>
+  </div>
+  </div>
+  <script src="/main.js"></script>
 </body>
 
 </html>
